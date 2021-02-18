@@ -7,7 +7,8 @@ exports.scheduleMsgInsert = async (req, res)=>{
 
     var message = req.body.message;
     cron_message.push(message);
-    var day = req.body.day;
+    var day = req.body.day.charAt(0).toUpperCase() + req.body.day.slice(1);
+    
     var time = req.body.time;
 
     cron.schedule(`${time.split(":")[1]} ${time.split(":")[0]} * * ${day}`, function() {
