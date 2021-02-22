@@ -8,4 +8,4 @@
     
 <b>- post-service that takes the message, day, and time in body parameters and it inserts that message into DB at that particular day and time.</b>
   - POST /api/schedule
-    - raw JSON data {"message":"your msg","day":"Monday","time":"23:00:00"}
+    - raw JSON data {"message":"your msg","day":"monday","time":"23:00:00"}
